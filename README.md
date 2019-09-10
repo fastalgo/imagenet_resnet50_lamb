@@ -4,6 +4,10 @@ Just hit ./run.sh
 
 ##################################################################################################################################
 
+Please check log.out for the training log.
+
+##################################################################################################################################
+
 This is an implementation of LAMB optimizer by TensorFlow for ImageNet/ResNet-50 training.
 
 Large Batch Optimization for Deep Learning: Training BERT in 76 minutes
