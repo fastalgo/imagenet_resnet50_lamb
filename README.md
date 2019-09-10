@@ -25,3 +25,7 @@ State-of-the-art optimizer like Adam fails to achieve this level of accuracy for
 The authors significantly tuned the hyper-parameters of Adam in https://arxiv.org/pdf/1904.00962.pdf
 
 ##################################################################################################################################
+
+We use 128 v3 TPU chips in this experiment. Because of the distributed batch normalization, the accuracy will be higher if you increase the number of chips to 256 or 512.
+
+##################################################################################################################################
