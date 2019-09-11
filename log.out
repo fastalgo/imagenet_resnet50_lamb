@@ -28,7 +28,7 @@ Removing gs://bert-pretrain-data/imagenet/v3-8-4tb/model.ckpt-2800.data-00000-of
 / [21 objects]                                                                  
 Operation completed over 21 objects.                                             
 WARNING: Logging before flag parsing goes to stderr.
-W0910 01:35:36.348922 139930382239168 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/optimization.py:59: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+W0910 01:35:36.348922 139930382239168 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/optimization.py:59: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
 
 W0910 01:35:36.350147 139930382239168 deprecation_wrapper.py:119] From resnet_main.py:677: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
 
@@ -552,48 +552,48 @@ W0910 01:35:36.854882 139930382239168 deprecation.py:323] From /usr/local/lib/py
 Instructions for updating:
 Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
 I0910 01:35:36.866014 139930382239168 estimator.py:1145] Calling model_fn.
-W0910 01:35:36.877422 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:294: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+W0910 01:35:36.877422 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:294: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.experimental.parallel_interleave(...)`.
 W0910 01:35:36.877579 139930382239168 deprecation.py:323] From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
-W0910 01:35:36.899143 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:298: shuffle_and_repeat (from tensorflow.contrib.data.python.ops.shuffle_ops) is deprecated and will be removed in a future version.
+W0910 01:35:36.899143 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:298: shuffle_and_repeat (from tensorflow.contrib.data.python.ops.shuffle_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.experimental.shuffle_and_repeat(...)`.
 W0910 01:35:36.899363 139930382239168 deprecation.py:323] From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/data/python/ops/shuffle_ops.py:54: shuffle_and_repeat (from tensorflow.python.data.experimental.ops.shuffle_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.shuffle(buffer_size, seed)` followed by `tf.data.Dataset.repeat(count)`. Static tf.data optimizations will take care of using the fused implementation.
-W0910 01:35:36.902005 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:181: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+W0910 01:35:36.902005 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:181: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.experimental.map_and_batch(...)`.
 W0910 01:35:36.902149 139930382239168 deprecation.py:323] From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/data/python/ops/batching.py:273: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
-W0910 01:35:36.903469 139930382239168 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:97: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+W0910 01:35:36.903469 139930382239168 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:97: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
 
-W0910 01:35:36.903636 139930382239168 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:101: The name tf.VarLenFeature is deprecated. Please use tf.io.VarLenFeature instead.
+W0910 01:35:36.903636 139930382239168 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:101: The name tf.VarLenFeature is deprecated. Please use tf.io.VarLenFeature instead.
 
-W0910 01:35:36.903736 139930382239168 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:108: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+W0910 01:35:36.903736 139930382239168 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:108: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
 
-W0910 01:35:36.914776 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_preprocessing.py:66: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+W0910 01:35:36.914776 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_preprocessing.py:66: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
 Instructions for updating:
 `seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
-W0910 01:35:36.942001 139930382239168 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_preprocessing.py:124: The name tf.image.resize_bicubic is deprecated. Please use tf.compat.v1.image.resize_bicubic instead.
+W0910 01:35:36.942001 139930382239168 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/resnet_preprocessing.py:124: The name tf.image.resize_bicubic is deprecated. Please use tf.compat.v1.image.resize_bicubic instead.
 
-W0910 01:35:42.196728 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:127: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+W0910 01:35:42.196728 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:127: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.keras.layers.Conv2D` instead.
-W0910 01:35:42.398998 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:67: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+W0910 01:35:42.398998 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:67: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
-W0910 01:35:42.482156 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:283: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+W0910 01:35:42.482156 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:283: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use keras.layers.MaxPooling2D instead.
-W0910 01:35:45.774473 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:308: average_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+W0910 01:35:45.774473 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:308: average_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use keras.layers.AveragePooling2D instead.
-W0910 01:35:45.779191 139930382239168 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:315: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+W0910 01:35:45.779191 139930382239168 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:315: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use keras.layers.dense instead.
 W0910 01:35:46.058871 139930382239168 deprecation_wrapper.py:119] From resnet_main.py:346: The name tf.losses.softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.softmax_cross_entropy instead.
@@ -610,7 +610,7 @@ I0910 01:35:46.197484 139930382239168 resnet_main.py:385] **********************
 I0910 01:35:46.197546 139930382239168 resnet_main.py:386] ****************************** the weight_decay is 0.0 **************************************
 I0910 01:35:46.197594 139930382239168 resnet_main.py:387] ****************************** the label_smoothing is 0.1 **************************************
 I0910 01:35:46.197642 139930382239168 resnet_main.py:388] ****************************** the weight_decay_input is 1.5 **************************************
-W0910 01:35:46.198489 139930382239168 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/optimization.py:15: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+W0910 01:35:46.198489 139930382239168 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/optimization.py:15: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
 
 I0910 01:35:46.228247 139930382239168 optimization.py:28] ++++++ warmup starts at step 0, for 782 steps ++++++
 I0910 01:35:49.304697 139930382239168 optimization.py:136] *********** I'm using LAMB correction ***********
@@ -1001,7 +1001,7 @@ I0910 01:53:50.009974 139930382239168 tpu_estimator.py:606] Shutdown TPU system.
 I0910 01:54:06.298722 139930382239168 estimator.py:368] Loss for final step: 1.8589756.
 I0910 01:54:06.299432 139930382239168 error_handling.py:96] training_loop marked as finished
 WARNING: Logging before flag parsing goes to stderr.
-W0910 01:54:08.818458 140209442928064 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/optimization.py:59: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+W0910 01:54:08.818458 140209442928064 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/optimization.py:59: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
 
 W0910 01:54:08.819566 140209442928064 deprecation_wrapper.py:119] From resnet_main.py:677: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
 
@@ -1059,39 +1059,39 @@ I0910 01:54:09.273390 140209442928064 tpu_system_metadata.py:154] *** Available 
 I0910 01:54:09.273433 140209442928064 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 1515960741068450637)
 I0910 01:54:09.273478 140209442928064 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 4828596614625686687)
 I0910 01:54:09.279661 140209442928064 estimator.py:1145] Calling model_fn.
-W0910 01:54:09.295717 140209442928064 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:294: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+W0910 01:54:09.295717 140209442928064 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:294: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.experimental.parallel_interleave(...)`.
 W0910 01:54:09.295896 140209442928064 deprecation.py:323] From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
-W0910 01:54:09.318618 140209442928064 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:181: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+W0910 01:54:09.318618 140209442928064 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:181: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.experimental.map_and_batch(...)`.
 W0910 01:54:09.318818 140209442928064 deprecation.py:323] From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/data/python/ops/batching.py:273: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
-W0910 01:54:09.320045 140209442928064 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:97: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+W0910 01:54:09.320045 140209442928064 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:97: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
 
-W0910 01:54:09.320231 140209442928064 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:101: The name tf.VarLenFeature is deprecated. Please use tf.io.VarLenFeature instead.
+W0910 01:54:09.320231 140209442928064 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:101: The name tf.VarLenFeature is deprecated. Please use tf.io.VarLenFeature instead.
 
-W0910 01:54:09.320348 140209442928064 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/imagenet_input.py:108: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+W0910 01:54:09.320348 140209442928064 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/imagenet_input.py:108: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
 
-W0910 01:54:09.345411 140209442928064 deprecation_wrapper.py:119] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_preprocessing.py:124: The name tf.image.resize_bicubic is deprecated. Please use tf.compat.v1.image.resize_bicubic instead.
+W0910 01:54:09.345411 140209442928064 deprecation_wrapper.py:119] From /home/fastalgo/imagenet_resnet50_lamb/resnet_preprocessing.py:124: The name tf.image.resize_bicubic is deprecated. Please use tf.compat.v1.image.resize_bicubic instead.
 
-W0910 01:54:09.429806 140209442928064 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:127: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+W0910 01:54:09.429806 140209442928064 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:127: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.keras.layers.Conv2D` instead.
-W0910 01:54:09.640388 140209442928064 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:67: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+W0910 01:54:09.640388 140209442928064 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:67: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
-W0910 01:54:09.710535 140209442928064 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:283: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+W0910 01:54:09.710535 140209442928064 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:283: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use keras.layers.MaxPooling2D instead.
-W0910 01:54:12.322221 140209442928064 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:308: average_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+W0910 01:54:12.322221 140209442928064 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:308: average_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use keras.layers.AveragePooling2D instead.
-W0910 01:54:12.326894 140209442928064 deprecation.py:323] From /home/yangyouucb/imagenet_resnet50_lamb/resnet_model.py:315: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+W0910 01:54:12.326894 140209442928064 deprecation.py:323] From /home/fastalgo/imagenet_resnet50_lamb/resnet_model.py:315: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use keras.layers.dense instead.
 W0910 01:54:12.606740 140209442928064 deprecation_wrapper.py:119] From resnet_main.py:346: The name tf.losses.softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.softmax_cross_entropy instead.
