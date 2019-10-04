@@ -14,7 +14,7 @@ Large Batch Optimization for Deep Learning: Training BERT in 76 minutes
 
 https://arxiv.org/pdf/1904.00962.pdf
 
-Yang You, Jing Li, Sashank Reddi, Jonathan Hseu, Sanjiv Kumar, Srinadh Bhojanapalli, Xiaodan Song, James Demmel, Cho-Jui Hsieh
+Yang You, Jing Li, Sashank Reddi, Jonathan Hseu, Sanjiv Kumar, Srinadh Bhojanapalli, Xiaodan Song, James Demmel, Kurt Keutzer, Cho-Jui Hsieh
 
 #################################################################################################
 
