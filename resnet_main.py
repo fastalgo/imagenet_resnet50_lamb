@@ -234,6 +234,10 @@ flags.DEFINE_float('learning_rate', 1e-3, 'The initial learning rate.')
 flags.DEFINE_float('poly_power', 0.5, 'The power of poly decay.')
 
 flags.DEFINE_float('weight_decay_input', 1e-4, 'Weight decay.')
+flags.DEFINE_float('beta1_input', 0.9, 'beta1 for LAMB.')
+flags.DEFINE_float('beta2_input', 0.999, 'beta2 for LAMB.')
+flags.DEFINE_float('eps_input', 1e-6, 'eps for LAMB.')
+
 
 flags.DEFINE_integer('num_warmup_steps', 782, 'Number of warmup steps.')
 
@@ -386,10 +390,13 @@ def resnet_model_fn(features, labels, mode, params):
     tf.logging.info("****************************** the weight_decay is " +str(FLAGS.weight_decay)+ " **************************************")
     tf.logging.info("****************************** the label_smoothing is " +str(FLAGS.label_smoothing)+ " **************************************")
     tf.logging.info("****************************** the weight_decay_input is " +str(FLAGS.weight_decay_input)+ " **************************************")
+    tf.logging.info("****************************** the beta1 is " +str(FLAGS.beta1_input)+ " **************************************")
+    tf.logging.info("****************************** the beta2 is " +str(FLAGS.beta2_input)+ " **************************************")
+    tf.logging.info("****************************** the eps is " +str(FLAGS.eps_input)+ " **************************************")
     update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
     with tf.control_dependencies(update_ops):
       # train_op = optimizer.minimize(loss, global_step)
-      train_op = optimization.create_optimizer(loss, FLAGS.learning_rate, FLAGS.train_steps, FLAGS.num_warmup_steps, FLAGS.use_tpu, FLAGS.poly_power, FLAGS.start_warmup_step, FLAGS.weight_decay_input)
+      train_op = optimization.create_optimizer(loss, FLAGS.learning_rate, FLAGS.train_steps, FLAGS.num_warmup_steps, FLAGS.use_tpu, FLAGS.poly_power, FLAGS.start_warmup_step, FLAGS.weight_decay_input, FLAGS.beta1_input, FLAGS.beta2_input, FLAGS.eps_input)
 
     #if not FLAGS.skip_host_call:
       #def host_call_fn(gs, loss, lr, ce):

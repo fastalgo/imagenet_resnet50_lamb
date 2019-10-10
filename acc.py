@@ -17,6 +17,12 @@ with open(filename) as f:
             print(line)
         if "top_1_accuracy" in line:
             print(line)
+        if "beta1 is" in line:
+            print(line)
+        if "beta2 is" in line:
+            print(line)
+        if "eps is" in line:
+            print(line)
             #mystr = line.split();
             #acclist = mystr[-1].split('%');
             #acc = float(acclist[0]);
